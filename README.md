@@ -49,8 +49,17 @@ Puis <http://localhost:8000>. N'importe quel serveur statique convient
 
 ## Déploiement
 
-Automatique : à chaque `push` sur `main`, le workflow
-`.github/workflows/deploy.yml` publie le site sur GitHub Pages.
+Le dépôt contient le site tel quel : **aucun build**.
+
+GitHub Pages → Settings → Pages :
+
+- **Source** : Deploy from a branch
+- **Branch** : `main` · folder `/ (root)`
+- Save
+
+Le site est publié sous 1 à 2 minutes à l'adresse
+`https://<compte>.github.io/Festi-dibi/`.
+Le fichier `.nojekyll` évite que GitHub transforme les fichiers.
 
 ## Charte
 
