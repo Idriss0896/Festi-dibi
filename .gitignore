@@ -1,0 +1,14 @@
+﻿# Système et éditeurs
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Fichiers de travail (diagnostics)
+_diag.html
+_shot.html
+*.log
+
+# Dépendances (si build plus tard)
+node_modules/

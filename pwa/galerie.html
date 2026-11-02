@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Galerie — Festival du Dibi · 12ᵉ édition</title>
+<meta name="description" content="La galerie photo du Festival du Dibi : la braise, les grilladiers, la foule et les nuits de concert à Bamako.">
+<meta name="theme-color" content="#0A0705">
+<meta name="color-scheme" content="dark">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Festi Dibi">
+
+<script>document.documentElement.classList.add("js");</script>
+
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="assets/logo-mark.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Galerie — Festival du Dibi">
+<meta property="og:description" content="Huit regards sur la braise, la foule et les nuits du Festival du Dibi.">
+<meta property="og:image" content="assets/photos/og-festival.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="preload" as="image" href="assets/photos/aerial-1600.webp" imagesrcset="assets/photos/aerial-800.webp 800w, assets/photos/aerial-1600.webp 1600w" imagesizes="100vw">
+
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+<a class="skip" href="#galerie">Aller à la galerie</a>
+
+<main id="contenu">
+
+<!-- ============================== EN-TÊTE ============================== -->
+<section class="page-hero" aria-labelledby="pageTitle">
+  <div class="page-hero__bg" aria-hidden="true">
+    <img src="assets/photos/aerial-1600.webp"
+         srcset="assets/photos/aerial-800.webp 800w, assets/photos/aerial-1600.webp 1600w"
+         sizes="100vw" width="1600" height="1066" alt="" fetchpriority="high" decoding="async">
+  </div>
+
+  <div class="wrap">
+    <div class="page-hero__inner">
+      <nav class="crumbs" aria-label="Fil d’Ariane">
+        <a href="index.html">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m14 6-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Accueil
+        </a>
+        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m9 6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span aria-current="page">Galerie</span>
+      </nav>
+
+      <p class="chip" data-hero><span class="chip__dot"></span>Galerie officielle · 12ᵉ édition</p>
+
+      <h1 class="page-title" id="pageTitle" data-hero>
+        La braise,<br><span class="grad">en images.</span>
+      </h1>
+
+      <p class="page-lede" data-hero>
+        Huit regards sur le festival : la fumée des grillades, les visages de la foule,
+        les lumières de la scène et le village qui s’allume à la tombée du jour.
+      </p>
+
+      <div class="page-hero__actions" data-hero>
+        <a class="btn btn--primary" href="#galerie">
+          Voir les photos
+          <svg class="arrow" width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a class="btn btn--ghost" href="lineup.html">
+          Découvrir le programme
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 6h12M8 12h12M8 18h12M4 6h.01M4 12h.01M4 18h.01" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+      </div>
+
+      <div class="facts" data-hero>
+        <span class="fact"><b>8</b><span>photos</span></span>
+        <span class="fact"><b>3</b><span>univers</span></span>
+        <span class="fact"><b>13</b><span>nuits</span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================== GALERIE ============================== -->
+<section class="gallery-section" id="galerie" aria-labelledby="galleryTitle">
+  <div class="wrap">
+    <div class="gallery-toolbar">
+      <div>
+        <h2 class="h2" id="galleryTitle" style="margin-bottom:4px">Le festival en photos</h2>
+        <p class="gallery-toolbar__count">
+          <output data-gallery-count aria-live="polite">8</output> photo(s) affichée(s)
+        </p>
+      </div>
+
+      <div class="flt__row" role="group" aria-label="Filtrer la galerie">
+        <button class="fchip" type="button" data-gallery-filter="all" aria-pressed="true">Tout</button>
+        <button class="fchip" type="button" data-gallery-filter="scene" aria-pressed="false">Scène</button>
+        <button class="fchip" type="button" data-gallery-filter="foule" aria-pressed="false">Foule</button>
+        <button class="fchip" type="button" data-gallery-filter="gastronomie" aria-pressed="false">Gastronomie</button>
+      </div>
+    </div>
+
+    <div class="gallery-grid" data-stagger>
+
+      <figure class="shot shot--big" data-gallery-item data-cat="foule" data-stagger-item>
+        <button class="shot__btn" type="button" data-lightbox
+                data-full="assets/photos/aerial-1600.webp"
+                data-title="Le village vu du ciel" data-cat="Foule">
+          <img src="assets/photos/aerial-800.webp"
+               srcset="assets/photos/aerial-800.webp 800w, assets/photos/aerial-1600.webp 1600w"
+               sizes="(max-width: 760px) 92vw, (max-width: 1080px) 62vw, 48vw"
+               width="1600" height="1066" alt="Vue aérienne du village du Festival du Dibi, la nuit"
+               loading="lazy" decoding="async">
+          <span class="shot__overlay"></span>
+          <span class="shot__zoom"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M14 4h6v6M20 4l-7 7M10 20H4v-6M4 20l7-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+          <span class="shot__cap"><span>Foule</span><b>Le village vu du ciel</b></span>
+        </button>
+      </figure>
+
+      <figure class="shot shot--tall" data-gallery-item data-cat="scene" data-stagger-item>
+        <button class="shot__btn" type="button" data-lightbox
+                data-full="assets/photos/singer-blue-1600.webp"
+                data-title="La nuit afrobeat" data-cat="Scène">
+          <img src="assets/photos/singer-blue-800.webp"
+               srcset="assets/photos/singer-blue-800.webp 800w, assets/photos/singer-blue-1600.webp 1600w"
+               sizes="(max-width: 760px) 46vw, (max-width: 1080px) 31vw, 24vw"
+               width="1600" height="1066" alt="Un chanteur sur la scène du festival, éclairage bleu"
+               loading="lazy" decoding="async">
+          <span class="shot__overlay"></span>
+          <span class="shot__zoom"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M14 4h6v6M20 4l-7 7M10 20H4v-6M4 20l7-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+          <span class="shot__cap"><span>Scène</span><b>La nuit afrobeat</b></span>
+        </button>
+      </figure>
+
+      <figure class="shot shot--wide" data-gallery-item data-cat="scene" data-stagger-item>
+        <button class="shot__btn" type="button" data-lightbox
+                data-full="assets/photos/singer-white-1600.webp"
+                data-title="Grande scène" data-cat="Scène">
+          <img src="assets/photos/singer-white-800.webp"
+               srcset="assets/photos/singer-white-800.webp 800w, assets/photos/singer-white-1600.webp 1600w"
+               sizes="(max-width: 760px) 46vw, (max-width: 1080px) 31vw, 24vw"
+               width="1280" height="960" alt="Un artiste en concert sur la grande scène du festival"
+               loading="lazy" decoding="async">
+          <span class="shot__overlay"></span>
+          <span class="shot__zoom"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M14 4h6v6M20 4l-7 7M10 20H4v-6M4 20l7-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+          <span class="shot__cap"><span>Scène</span><b>Grande scène</b></span>
+        </button>
+      </figure>
+
+      <figure class="shot" data-gallery-item data-cat="foule" data-stagger-item>
+        <button class="shot__btn" type="button" data-lightbox
+                data-full="assets/photos/crowd-girls-1600.webp"
+                data-title="Le public" data-cat="Foule">
+          <img src="assets/photos/crowd-girls-800.webp"
+               srcset="assets/photos/crowd-girls-800.webp 800w, assets/photos/crowd-girls-1600.webp 1600w"
+               sizes="(max-width: 760px) 46vw, (max-width: 1080px) 31vw, 24vw"
+               width="1600" height="1066" alt="Des festivalières souriantes dans la foule"
+               loading="lazy" decoding="async">
+          <span class="shot__overlay"></span>
+          <span class="shot__zoom"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M14 4h6v6M20 4l-7 7M10 20H4v-6M4 20l7-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+          <span class="shot__cap"><span>Foule</span><b>Le public</b></span>
+        </button>
+      </figure>
+
+      <figure class="shot" data-gallery-item data-cat="scene" data-stagger-item>
+        <button class="shot__btn" type="button" data-lightbox
+                data-full="assets/photos/stage-tradition-1600.webp"
+                data-title="Traditions du Sahel" data-cat="Scène">
+          <img src="assets/photos/stage-tradition-800.webp"
+               srcset="assets/photos/stage-tradition-800.webp 800w, assets/photos/stage-tradition-1600.webp 1600w"
+               sizes="(max-width: 760px) 46vw, (max-width: 1080px) 31vw, 24vw"
+               width="1600" height="1066" alt="Deux hommes en tenue traditionnelle sur la scène"
+               loading="lazy" decoding="async">
+          <span class="shot__overlay"></span>
+          <span class="shot__zoom"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M14 4h6v6M20 4l-7 7M10 20H4v-6M4 20l7-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+          <span class="shot__cap"><span>Scène</span><b>Traditions du Sahel</b></span>
+        </button>
+      </figure>
+
+      <figure class="shot" data-gallery-item data-cat="gastronomie" data-stagger-item>
+        <button class="shot__btn" type="button" data-lightbox
+                data-full="assets/photos/grill-skewers-1600.webp"
+                data-title="Le dibi sur la braise" data-cat="Gastronomie">
+          <img src="assets/photos/grill-skewers-800.webp"
+               srcset="assets/photos/grill-skewers-800.webp 800w, assets/photos/grill-skewers-1600.webp 1600w"
+               sizes="(max-width: 760px) 46vw, (max-width: 1080px) 31vw, 24vw"
+               width="1600" height="1066" alt="Dibi entier embroché et grillé sur la braise"
+               loading="lazy" decoding="async">
+          <span class="shot__overlay"></span>
+          <span class="shot__zoom"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M14 4h6v6M20 4l-7 7M10 20H4v-6M4 20l7-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+          <span class="shot__cap"><span>Gastronomie</span><b>Le dibi sur la braise</b></span>
+        </button>
+      </figure>
+
+      <figure class="shot shot--wide" data-gallery-item data-cat="gastronomie" data-stagger-item>
+        <button class="shot__btn" type="button" data-lightbox
+                data-full="assets/photos/grill-close-1600.webp"
+                data-title="Le dibi doré" data-cat="Gastronomie">
+          <img src="assets/photos/grill-close-800.webp"
+               srcset="assets/photos/grill-close-800.webp 800w, assets/photos/grill-close-1600.webp 1600w"
+               sizes="(max-width: 760px) 92vw, (max-width: 1080px) 62vw, 48vw"
+               width="1600" height="1066" alt="Dibi grillé, doré et croustillant, découpé sur la braise"
+               loading="lazy" decoding="async">
+          <span class="shot__overlay"></span>
+          <span class="shot__zoom"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M14 4h6v6M20 4l-7 7M10 20H4v-6M4 20l7-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+          <span class="shot__cap"><span>Gastronomie</span><b>Le dibi doré</b></span>
+        </button>
+      </figure>
+
+      <figure class="shot" data-gallery-item data-cat="gastronomie" data-stagger-item>
+        <button class="shot__btn" type="button" data-lightbox
+                data-full="assets/photos/grill-stall-1600.webp"
+                data-title="La pièce maîtresse" data-cat="Gastronomie">
+          <img src="assets/photos/grill-stall-800.webp"
+               srcset="assets/photos/grill-stall-800.webp 800w, assets/photos/grill-stall-1600.webp 1600w"
+               sizes="(max-width: 760px) 46vw, (max-width: 1080px) 31vw, 24vw"
+               width="1600" height="1066" alt="Une pièce de dibi décorée, présentée sous les projecteurs la nuit"
+               loading="lazy" decoding="async">
+          <span class="shot__overlay"></span>
+          <span class="shot__zoom"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M14 4h6v6M20 4l-7 7M10 20H4v-6M4 20l7-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+          <span class="shot__cap"><span>Gastronomie</span><b>La pièce maîtresse</b></span>
+        </button>
+      </figure>
+
+    </div>
+
+    <div class="empty" data-gallery-empty hidden>
+      <span class="empty__ico">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16v12H4V7Zm0 4 5-3 4 3 3-2 4 3" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><circle cx="15.5" cy="10.5" r="1" fill="currentColor"/></svg>
+      </span>
+      <b>Aucune photo dans cette catégorie</b>
+      <p>Essayez un autre filtre pour retrouver la braise, la foule ou les grilladiers.</p>
+      <button class="btn btn--outline btn--sm" type="button" data-gallery-filter="all">Tout afficher</button>
+    </div>
+
+    <div class="gallery-cta" data-reveal>
+      <div>
+        <h2>Vivez la 12ᵉ édition en vrai.</h2>
+        <p>Treize nuits de braise, de musique et de partage, place du Cinquantenaire, à Bamako.</p>
+      </div>
+      <div class="gallery-cta__actions">
+        <a class="btn btn--primary" href="index.html#billetterie">
+          Voir la billetterie
+          <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a class="btn btn--ghost" href="lineup.html">Voir le programme</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<script src="js/vendor/motion.min.js" defer></script>
+<script src="js/motion.js" defer></script>
+<script src="js/header.js" defer></script>
+<script src="js/gallery.js" defer></script>
+<script src="js/app.js" defer></script>
+</body>
+</html>

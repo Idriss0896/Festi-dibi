@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Programme — Festival du Dibi · 12ᵉ édition</title>
+<meta name="description" content="Le line-up du Festival du Dibi : filtrez les artistes par jour, par scène et par genre, et composez votre programme du 22 décembre 2026 au 3 janvier 2027.">
+<meta name="theme-color" content="#0A0705">
+<meta name="color-scheme" content="dark">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Festi Dibi">
+
+<script>document.documentElement.classList.add("js");</script>
+
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="assets/logo-mark.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Programme — Festival du Dibi">
+<meta property="og:description" content="Treize nuits de concerts et de braise. Découvrez le line-up de la 12ᵉ édition.">
+<meta property="og:image" content="assets/photos/og-festival.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="preload" as="image" href="assets/photos/aerial-1600.webp" imagesrcset="assets/photos/aerial-800.webp 800w, assets/photos/aerial-1600.webp 1600w" imagesizes="100vw">
+
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+<a class="skip" href="#lineup">Aller à la programmation</a>
+
+<main id="contenu">
+
+<!-- ============================== EN-TÊTE ============================== -->
+<section class="page-hero" aria-labelledby="pageTitle">
+  <div class="page-hero__bg" aria-hidden="true">
+    <img src="assets/photos/aerial-1600.webp"
+         srcset="assets/photos/aerial-800.webp 800w, assets/photos/aerial-1600.webp 1600w"
+         sizes="100vw" width="1600" height="1067" alt="" fetchpriority="high" decoding="async">
+  </div>
+
+  <div class="wrap">
+    <div class="page-hero__inner">
+      <nav class="crumbs" aria-label="Fil d’Ariane">
+        <a href="index.html">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m14 6-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Accueil
+        </a>
+        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m9 6 6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span aria-current="page">Programme</span>
+      </nav>
+
+      <p class="chip" data-hero><span class="chip__dot"></span>12ᵉ édition · 22 déc. 2026 — 3 janv. 2027</p>
+
+      <h1 class="page-title" id="pageTitle" data-hero>
+        Le line-up<br><span class="grad">de la braise.</span>
+      </h1>
+
+      <p class="page-lede" data-hero>
+        Treize nuits, trois scènes, plus de deux cents artistes. Filtrez par jour,
+        par scène ou par genre, repérez vos concerts et gardez vos favoris —
+        même hors connexion.
+      </p>
+
+      <div class="page-hero__actions" data-hero>
+        <a class="btn btn--primary" href="#lineup">
+          Explorer les artistes
+          <svg class="arrow" width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a class="btn btn--ghost" href="index.html#billetterie">
+          Prendre mon pass
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 9V7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v2a2.5 2.5 0 0 0 0 5v2a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2a2.5 2.5 0 0 0 0-5Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M13 6v2m0 3v2m0 3v2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+        </a>
+      </div>
+
+      <div class="facts" data-hero>
+        <span class="fact"><b>13</b><span>nuits de fête</span></span>
+        <span class="fact"><b>3</b><span>scènes</span></span>
+        <span class="fact"><b>200+</b><span>artistes</span></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="eq" aria-hidden="true">
+    <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+  </div>
+</section>
+
+<!-- ============================ PROGRAMMATION =========================== -->
+<section class="lineup-section" id="lineup" aria-labelledby="lineupTitle">
+  <div class="wrap">
+    <div class="lineup-top">
+      <div>
+        <h2 id="lineupTitle">Programmation</h2>
+        <p class="lineup-meta">
+          <output data-lineup-count aria-live="polite">8</output> artistes affichés
+          <span aria-hidden="true">·</span> extrait de la 12ᵉ édition
+        </p>
+      </div>
+
+      <div class="lineup-top__actions">
+        <button class="fchip fchip--fav" type="button" data-fav-toggle aria-pressed="false">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 20s-7-4.4-7-9.3A4 4 0 0 1 12 8a4 4 0 0 1 7 2.7C19 15.6 12 20 12 20Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          Mes favoris
+          <span class="fchip__count" data-fav-count>0</span>
+        </button>
+        <button class="btn btn--sm btn--ghost" type="button" data-lineup-reset>
+          Réinitialiser
+        </button>
+      </div>
+    </div>
+
+    <!-- Filtres -->
+    <div class="lineup-filters" data-reveal>
+      <div class="flt">
+        <span class="flt__label" id="fltDayLabel">Jour</span>
+        <div class="flt__row" role="group" aria-labelledby="fltDayLabel">
+          <button class="fchip" type="button" data-filter="day" data-value="all" aria-pressed="true">Tous</button>
+          <button class="fchip" type="button" data-filter="day" data-value="22" aria-pressed="false">Mar. 22</button>
+          <button class="fchip" type="button" data-filter="day" data-value="25" aria-pressed="false">Ven. 25</button>
+          <button class="fchip" type="button" data-filter="day" data-value="26" aria-pressed="false">Sam. 26</button>
+          <button class="fchip" type="button" data-filter="day" data-value="27" aria-pressed="false">Dim. 27</button>
+          <button class="fchip" type="button" data-filter="day" data-value="31" aria-pressed="false">Jeu. 31</button>
+        </div>
+      </div>
+
+      <div class="flt">
+        <span class="flt__label" id="fltSceneLabel">Scène</span>
+        <div class="flt__row" role="group" aria-labelledby="fltSceneLabel">
+          <button class="fchip" type="button" data-filter="scene" data-value="all" aria-pressed="true">Toutes</button>
+          <button class="fchip" type="button" data-filter="scene" data-value="grande" aria-pressed="false">Grande scène</button>
+          <button class="fchip" type="button" data-filter="scene" data-value="dibi" aria-pressed="false">Scène Dibi</button>
+          <button class="fchip" type="button" data-filter="scene" data-value="village" aria-pressed="false">Village</button>
+        </div>
+      </div>
+
+      <div class="flt">
+        <span class="flt__label" id="fltGenreLabel">Genre</span>
+        <div class="flt__row" role="group" aria-labelledby="fltGenreLabel">
+          <button class="fchip" type="button" data-filter="genre" data-value="all" aria-pressed="true">Tous</button>
+          <button class="fchip" type="button" data-filter="genre" data-value="mandingue" aria-pressed="false">Mandingue</button>
+          <button class="fchip" type="button" data-filter="genre" data-value="afrobeat" aria-pressed="false">Afrobeat</button>
+          <button class="fchip" type="button" data-filter="genre" data-value="wassoulou" aria-pressed="false">Wassoulou</button>
+          <button class="fchip" type="button" data-filter="genre" data-value="dj" aria-pressed="false">DJ set</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Grille d’artistes -->
+    <div class="artist-grid" data-stagger>
+
+      <article class="artist artist--gold" data-artist data-stagger-item
+               data-id="awa-sanga" data-name="Awa Sanga"
+               data-day="22" data-scene="grande" data-genre="afrobeat">
+        <div class="artist__media">
+          <img src="assets/photos/singer-white-800.webp"
+               srcset="assets/photos/singer-white-800.webp 800w, assets/photos/singer-white-1600.webp 1600w"
+               sizes="(max-width: 760px) 92vw, (max-width: 1080px) 46vw, 30vw"
+               width="1280" height="960" alt="Ambiance de concert sur la grande scène du festival"
+               loading="lazy" decoding="async">
+          <span class="artist__shade"></span>
+          <span class="artist__day"><i></i>Mar. 22 déc.</span>
+          <button class="artist__fav" type="button" data-fav aria-pressed="false" aria-label="Ajouter aux favoris : Awa Sanga">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 20s-7-4.4-7-9.3A4 4 0 0 1 12 8a4 4 0 0 1 7 2.7C19 15.6 12 20 12 20Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          </button>
+          <span class="artist__scene">Grande scène</span>
+        </div>
+        <div class="artist__body">
+          <p class="artist__genre">Afrobeat</p>
+          <h3>Awa Sanga</h3>
+          <p class="artist__meta">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+            22 h 30 · ouverture
+          </p>
+          <p class="artist__foot"><span><i></i>Concert</span><span>90 min</span></p>
+        </div>
+      </article>
+
+      <article class="artist artist--ember" data-artist data-stagger-item
+               data-id="kora-roots" data-name="Kora Roots"
+               data-day="22" data-scene="dibi" data-genre="mandingue">
+        <div class="artist__media">
+          <img src="assets/photos/stage-tradition-800.webp"
+               srcset="assets/photos/stage-tradition-800.webp 800w, assets/photos/stage-tradition-1600.webp 1600w"
+               sizes="(max-width: 760px) 92vw, (max-width: 1080px) 46vw, 30vw"
+               width="1600" height="1066" alt="Musiciens en tenue traditionnelle sur la scène du festival"
+               loading="lazy" decoding="async">
+          <span class="artist__shade"></span>
+          <span class="artist__day"><i></i>Mar. 22 déc.</span>
+          <button class="artist__fav" type="button" data-fav aria-pressed="false" aria-label="Ajouter aux favoris : Kora Roots">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 20s-7-4.4-7-9.3A4 4 0 0 1 12 8a4 4 0 0 1 7 2.7C19 15.6 12 20 12 20Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          </button>
+          <span class="artist__scene">Scène Dibi</span>
+        </div>
+        <div class="artist__body">
+          <p class="artist__genre">Mandingue</p>
+          <h3>Kora Roots</h3>
+          <p class="artist__meta">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+            20 h 00 · cérémonie
+          </p>
+          <p class="artist__foot"><span><i></i>Concert</span><span>75 min</span></p>
+        </div>
+      </article>
+
+      <article class="artist artist--ember" data-artist data-stagger-item
+               data-id="nana-diarra" data-name="Nana Diarra"
+               data-day="26" data-scene="grande" data-genre="wassoulou">
+        <div class="artist__media">
+          <img src="assets/photos/singer-blue-800.webp"
+               srcset="assets/photos/singer-blue-800.webp 800w, assets/photos/singer-blue-1600.webp 1600w"
+               sizes="(max-width: 760px) 92vw, (max-width: 1080px) 46vw, 30vw"
+               width="1600" height="1066" alt="Chanteuse sur la grande scène, éclairage bleu et braise"
+               loading="lazy" decoding="async">
+          <span class="artist__shade"></span>
+          <span class="artist__day"><i></i>Sam. 26 déc.</span>
+          <button class="artist__fav" type="button" data-fav aria-pressed="false" aria-label="Ajouter aux favoris : Nana Diarra">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 20s-7-4.4-7-9.3A4 4 0 0 1 12 8a4 4 0 0 1 7 2.7C19 15.6 12 20 12 20Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          </button>
+          <span class="artist__scene">Grande scène</span>
+        </div>
+        <div class="artist__body">
+          <p class="artist__genre">Wassoulou</p>
+          <h3>Nana Diarra</h3>
+          <p class="artist__meta">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+            23 h 00 · nuit mandingue
+          </p>
+          <p class="artist__foot"><span><i></i>Concert</span><span>90 min</span></p>
+        </div>
+      </article>
+
+      <article class="artist artist--plum" data-artist data-stagger-item
+               data-id="dj-sahel" data-name="DJ Sahel"
+               data-day="26" data-scene="village" data-genre="dj">
+        <div class="artist__media">
+          <img src="assets/photos/crowd-girls-800.webp"
+               srcset="assets/photos/crowd-girls-800.webp 800w, assets/photos/crowd-girls-1600.webp 1600w"
+               sizes="(max-width: 760px) 92vw, (max-width: 1080px) 46vw, 30vw"
+               width="1600" height="1066" alt="Public souriant et lumineux dans le village du festival"
+               loading="lazy" decoding="async">
+          <span class="artist__shade"></span>
+          <span class="artist__day"><i></i>Sam. 26 déc.</span>
+          <button class="artist__fav" type="button" data-fav aria-pressed="false" aria-label="Ajouter aux favoris : DJ Sahel">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 20s-7-4.4-7-9.3A4 4 0 0 1 12 8a4 4 0 0 1 7 2.7C19 15.6 12 20 12 20Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          </button>
+          <span class="artist__scene">Village</span>
+        </div>
+        <div class="artist__body">
+          <p class="artist__genre">DJ set</p>
+          <h3>DJ Sahel</h3>
+          <p class="artist__meta">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+            01 h 00 · after
+          </p>
+          <p class="artist__foot"><span><i></i>DJ set</span><span>2 h</span></p>
+        </div>
+      </article>
+
+      <article class="artist artist--gold" data-artist data-stagger-item
+               data-id="collectif-ba" data-name="Le Collectif Ba"
+               data-day="31" data-scene="grande" data-genre="afrobeat">
+        <div class="artist__media">
+          <img src="assets/photos/aerial-800.webp"
+               srcset="assets/photos/aerial-800.webp 800w, assets/photos/aerial-1600.webp 1600w"
+               sizes="(max-width: 760px) 92vw, (max-width: 1080px) 46vw, 30vw"
+               width="1600" height="1067" alt="Foule compacte devant la scène lors du réveillon"
+               loading="lazy" decoding="async">
+          <span class="artist__shade"></span>
+          <span class="artist__day"><i></i>Jeu. 31 déc.</span>
+          <button class="artist__fav" type="button" data-fav aria-pressed="false" aria-label="Ajouter aux favoris : Le Collectif Ba">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 20s-7-4.4-7-9.3A4 4 0 0 1 12 8a4 4 0 0 1 7 2.7C19 15.6 12 20 12 20Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          </button>
+          <span class="artist__scene">Grande scène</span>
+        </div>
+        <div class="artist__body">
+          <p class="artist__genre">Afrobeat</p>
+          <h3>Le Collectif Ba</h3>
+          <p class="artist__meta">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+            21 h 15 · réveillon
+          </p>
+          <p class="artist__foot"><span><i></i>Concert</span><span>75 min</span></p>
+        </div>
+      </article>
+
+      <article class="artist artist--green" data-artist data-stagger-item
+               data-id="ensemble-kanaga" data-name="Ensemble Kanaga"
+               data-day="31" data-scene="dibi" data-genre="mandingue">
+        <div class="artist__media">
+          <img src="assets/photos/stage-tradition-800.webp"
+               srcset="assets/photos/stage-tradition-800.webp 800w, assets/photos/stage-tradition-1600.webp 1600w"
+               sizes="(max-width: 760px) 92vw, (max-width: 1080px) 46vw, 30vw"
+               width="1600" height="1066" alt="Musiciens en tenue traditionnelle sur la scène Dibi" loading="lazy" decoding="async" style="object-position:35% 30%">
+          <span class="artist__shade"></span>
+          <span class="artist__day"><i></i>Jeu. 31 déc.</span>
+          <button class="artist__fav" type="button" data-fav aria-pressed="false" aria-label="Ajouter aux favoris : Ensemble Kanaga">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 20s-7-4.4-7-9.3A4 4 0 0 1 12 8a4 4 0 0 1 7 2.7C19 15.6 12 20 12 20Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          </button>
+          <span class="artist__scene">Scène Dibi</span>
+        </div>
+        <div class="artist__body">
+          <p class="artist__genre">Mandingue</p>
+          <h3>Ensemble Kanaga</h3>
+          <p class="artist__meta">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+            19 h 30 · veillée
+          </p>
+          <p class="artist__foot"><span><i></i>Concert</span><span>60 min</span></p>
+        </div>
+      </article>
+
+      <article class="artist artist--plum" data-artist data-stagger-item
+               data-id="sira-kone" data-name="Sira Koné"
+               data-day="25" data-scene="village" data-genre="wassoulou">
+        <div class="artist__media">
+          <img src="assets/photos/singer-white-800.webp"
+               srcset="assets/photos/singer-white-800.webp 800w, assets/photos/singer-white-1600.webp 1600w"
+               sizes="(max-width: 760px) 92vw, (max-width: 1080px) 46vw, 30vw"
+               width="1280" height="960" alt="Artiste sur scène dans une lumière chaude"
+               loading="lazy" decoding="async" style="object-position:70% 30%">
+          <span class="artist__shade"></span>
+          <span class="artist__day"><i></i>Ven. 25 déc.</span>
+          <button class="artist__fav" type="button" data-fav aria-pressed="false" aria-label="Ajouter aux favoris : Sira Koné">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 20s-7-4.4-7-9.3A4 4 0 0 1 12 8a4 4 0 0 1 7 2.7C19 15.6 12 20 12 20Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          </button>
+          <span class="artist__scene">Village</span>
+        </div>
+        <div class="artist__body">
+          <p class="artist__genre">Wassoulou</p>
+          <h3>Sira Koné</h3>
+          <p class="artist__meta">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+            18 h 45 · Noël
+          </p>
+          <p class="artist__foot"><span><i></i>Concert</span><span>60 min</span></p>
+        </div>
+      </article>
+
+      <article class="artist artist--ember" data-artist data-stagger-item
+               data-id="fanta-traore" data-name="Fanta Traoré"
+               data-day="27" data-scene="dibi" data-genre="afrobeat">
+        <div class="artist__media">
+          <img src="assets/photos/singer-blue-800.webp"
+               srcset="assets/photos/singer-blue-800.webp 800w, assets/photos/singer-blue-1600.webp 1600w"
+               sizes="(max-width: 760px) 92vw, (max-width: 1080px) 46vw, 30vw"
+               width="1600" height="1066" alt="Chanteur sur la scène Dibi, lumières bleues et public"
+               loading="lazy" decoding="async" style="object-position:35% 40%">
+          <span class="artist__shade"></span>
+          <span class="artist__day"><i></i>Dim. 27 déc.</span>
+          <button class="artist__fav" type="button" data-fav aria-pressed="false" aria-label="Ajouter aux favoris : Fanta Traoré">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 20s-7-4.4-7-9.3A4 4 0 0 1 12 8a4 4 0 0 1 7 2.7C19 15.6 12 20 12 20Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          </button>
+          <span class="artist__scene">Scène Dibi</span>
+        </div>
+        <div class="artist__body">
+          <p class="artist__genre">Afrobeat</p>
+          <h3>Fanta Traoré</h3>
+          <p class="artist__meta">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+            21 h 00 · nuit afro
+          </p>
+          <p class="artist__foot"><span><i></i>Concert</span><span>70 min</span></p>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- état vide -->
+    <div class="empty" data-lineup-empty hidden>
+      <span class="empty__ico">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 20s-7-4.4-7-9.3A4 4 0 0 1 12 8a4 4 0 0 1 7 2.7C19 15.6 12 20 12 20Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+      </span>
+      <b>Aucun artiste à afficher</b>
+      <p data-lineup-empty-text>Aucun artiste ne correspond à ces filtres. Essayez une autre combinaison.</p>
+      <button class="btn btn--outline btn--sm" type="button" data-lineup-reset>Réinitialiser les filtres</button>
+    </div>
+
+    <p class="infos__note" style="margin-top:22px">
+      Extrait de programmation — les huit artistes affichés et leurs horaires sont indicatifs.
+      La programmation officielle de la 12ᵉ édition sera publiée par les organisateurs.
+    </p>
+  </div>
+</section>
+
+<!-- ================================ SCÈNES ============================== -->
+<section class="section--venues" aria-labelledby="scenesTitle">
+  <div class="wrap">
+    <header class="section__head section__head--split" data-reveal>
+      <div>
+        <p class="eyebrow">Les scènes</p>
+        <h2 class="h2" id="scenesTitle">Trois scènes,<br><span class="muted">une seule braise.</span></h2>
+      </div>
+      <p class="section__intro section__intro--right">
+        De la grande scène aux sets du village, chaque espace a son tempo.
+        Passez de l’une à l’autre en quelques pas.
+      </p>
+    </header>
+
+    <div class="venues" data-stagger>
+      <article class="venue" data-stagger-item>
+        <img src="assets/photos/singer-white-800.webp"
+             srcset="assets/photos/singer-white-800.webp 800w, assets/photos/singer-white-1600.webp 1600w"
+             sizes="(max-width: 760px) 92vw, 31vw" width="1280" height="960"
+             alt="Grande scène du festival, artiste et public" loading="lazy" decoding="async">
+        <p class="venue__tag">Têtes d’affiche</p>
+        <h3>La grande scène</h3>
+        <p>Les grands concerts, les cérémonies et le réveillon, face à la place entière.</p>
+        <span class="venue__times">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+          20 h → 2 h
+        </span>
+      </article>
+
+      <article class="venue" data-stagger-item>
+        <img src="assets/photos/stage-tradition-800.webp"
+             srcset="assets/photos/stage-tradition-800.webp 800w, assets/photos/stage-tradition-1600.webp 1600w"
+             sizes="(max-width: 760px) 92vw, 31vw" width="1600" height="1066"
+             alt="Musiciens traditionnels sur la scène Dibi" loading="lazy" decoding="async">
+        <p class="venue__tag">Traditions &amp; créations</p>
+        <h3>La scène Dibi</h3>
+        <p>Kora, ngoni, voix du Mandé et nouvelles écritures, au plus près du public.</p>
+        <span class="venue__times">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+          18 h 30 → 00 h
+        </span>
+      </article>
+
+      <article class="venue" data-stagger-item>
+        <img src="assets/photos/grill-stall-800.webp"
+             srcset="assets/photos/grill-stall-800.webp 800w, assets/photos/grill-stall-1600.webp 1600w"
+             sizes="(max-width: 760px) 92vw, 31vw" width="1600" height="1066"
+             alt="Une pièce de dibi décorée, présentée la nuit au village des grilladiers" loading="lazy" decoding="async">
+        <p class="venue__tag">After &amp; rencontres</p>
+        <h3>Le village</h3>
+        <p>DJ sets, tables partagées et artisans : le cœur battant du festival, jusqu’au bout de la nuit.</p>
+        <span class="venue__times">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+          17 h → 1 h
+        </span>
+      </article>
+    </div>
+
+    <div class="gallery-cta" data-reveal>
+      <div>
+        <h2>Prêt à composer votre festival ?</h2>
+        <p>Réservez votre pass, gardez vos favoris et retrouvez le programme même hors connexion.</p>
+      </div>
+      <div class="gallery-cta__actions">
+        <a class="btn btn--primary" href="index.html#billetterie">
+          Voir la billetterie
+          <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a class="btn btn--ghost" href="galerie.html">Explorer la galerie</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<script src="js/vendor/motion.min.js" defer></script>
+<script src="js/motion.js" defer></script>
+<script src="js/header.js" defer></script>
+<script src="js/lineup.js" defer></script>
+<script src="js/app.js" defer></script>
+</body>
+</html>

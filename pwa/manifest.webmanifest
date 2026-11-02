@@ -1,0 +1,53 @@
+{
+  "name": "Festival du Dibi",
+  "short_name": "Festi Dibi",
+  "description": "Le festival du dibi à Bamako : 13 jours de gastronomie, de musique et de partage, du 22 décembre 2026 au 3 janvier 2027.",
+  "lang": "fr",
+  "dir": "ltr",
+  "start_url": "./index.html",
+  "scope": "./",
+  "id": "/festidibi/",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "orientation": "portrait-primary",
+  "background_color": "#0A0705",
+  "theme_color": "#0A0705",
+  "categories": ["food", "music", "entertainment"],
+  "icons": [
+    {
+      "src": "assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Le programme",
+      "short_name": "Programme",
+      "url": "./lineup.html"
+    },
+    {
+      "name": "La galerie",
+      "short_name": "Galerie",
+      "url": "./galerie.html"
+    },
+    {
+      "name": "La billetterie",
+      "short_name": "Billetterie",
+      "url": "./index.html#billetterie"
+    }
+  ]
+}
