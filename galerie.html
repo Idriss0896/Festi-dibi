@@ -27,7 +27,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <link rel="preload" as="image" href="assets/photos/aerial-1600.webp" imagesrcset="assets/photos/aerial-800.webp 800w, assets/photos/aerial-1600.webp 1600w" imagesizes="100vw">
 
@@ -60,7 +60,7 @@
         <span aria-current="page">Galerie</span>
       </nav>
 
-      <p class="chip" data-hero><span class="chip__dot"></span>Galerie officielle · 12ᵉ édition</p>
+      <p class="chip" data-hero>Galerie officielle · 12ᵉ édition</p>
 
       <h1 class="page-title" id="pageTitle" data-hero>
         La braise,<br><span class="grad">en images.</span>
@@ -266,5 +266,28 @@
 <script src="js/header.js" defer></script>
 <script src="js/gallery.js" defer></script>
 <script src="js/app.js" defer></script>
+<script>
+/* compteur de photos par catégorie, ajouté aux pastilles de filtre */
+document.addEventListener("DOMContentLoaded", function () {
+  var items = document.querySelectorAll("[data-gallery-item]");
+  var chips = document.querySelectorAll("[data-gallery-filter]");
+  if (!items.length || !chips.length) return;
+  var counts = { all: items.length };
+  Array.prototype.forEach.call(items, function (i) {
+    var c = i.getAttribute("data-cat");
+    if (c) counts[c] = (counts[c] || 0) + 1;
+  });
+  Array.prototype.forEach.call(chips, function (chip) {
+    if (chip.querySelector(".fchip__n")) return;
+    var key = chip.getAttribute("data-gallery-filter");
+    var n = counts[key] || 0;
+    if (!n) return;
+    var s = document.createElement("span");
+    s.className = "fchip__count";
+    s.textContent = n;
+    chip.appendChild(s);
+  });
+});
+</script>
 </body>
 </html>

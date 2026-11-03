@@ -51,6 +51,7 @@
             "<span>Bamako · Mali</span>" +
           "</span>" +
         "</a>" +
+        '<span class="sh__name" aria-hidden="true">FESTI DIBI</span>' +
         '<nav class="sh__nav" aria-label="Navigation principale">' + navItems("sh__link") + "</nav>" +
         '<div class="sh__actions">' +
           '<button class="sh__burger" id="shBurger" type="button" aria-expanded="false" aria-controls="shMobile" aria-label="Ouvrir le menu">' +
