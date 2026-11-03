@@ -3,7 +3,7 @@
    Stratégies : app shell en cache-first, pages en network-first
    ============================================================ */
 
-const VERSION = "festidibi-v12";
+const VERSION = "festidibi-v13";
 const SHELL = [
   "./",
   "./index.html",

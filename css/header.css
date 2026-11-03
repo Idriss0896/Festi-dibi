@@ -50,10 +50,10 @@
 .sh__name{
   position:absolute;left:50%;top:50%;
   transform:translate(-50%,-50%);
-  font-family:"Kablammo",var(--font-display),cursive;
+  font-family:"Griffy",var(--font-display),cursive;
   font-weight:400;
-  font-size:clamp(24px,2.2vw,32px);
-  letter-spacing:.01em;
+  font-size:clamp(26px,2.4vw,34px);
+  letter-spacing:.02em;
   text-transform:uppercase;
   line-height:1;
   background:linear-gradient(180deg,#FFF0A8 0%,#FFD400 26%,#FF9A1F 58%,#FF5A1F 78%,#E11D2E 100%);
@@ -95,8 +95,8 @@
 
 .sh__tagline{display:grid;gap:2px;min-width:0}
 .sh__tagline b{
-  font-family:"Kablammo",var(--font-display),cursive;
-  font-size:16px;font-weight:400;letter-spacing:.02em;text-transform:uppercase;
+  font-family:"Griffy",var(--font-display),cursive;
+  font-size:17px;font-weight:400;letter-spacing:.03em;text-transform:uppercase;
   line-height:1.05;
   background:linear-gradient(180deg,#FFF0A8 0%,#FFD400 26%,#FF9A1F 58%,#FF5A1F 78%,#E11D2E 100%);
   -webkit-background-clip:text;background-clip:text;
