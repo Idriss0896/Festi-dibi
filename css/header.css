@@ -57,6 +57,8 @@
 }
 @media (max-width:620px){ .sh__name{font-size:16px;letter-spacing:.1em} }
 @media (max-width:400px){ .sh__name{display:none} }
+/* entre 1000 et 1200 px, le menu occupe la place : on masque le nom pour éviter tout chevauchement */
+@media (min-width:1000px) and (max-width:1199px){ .sh__name{display:none} }
 
 /* ------------------------------------------------------------------ marque */
 .sh__brand{
